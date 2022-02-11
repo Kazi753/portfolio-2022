@@ -1,0 +1,178 @@
+<html lang="en">
+  <head></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content />
+    <title>Smashing Dishes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!--Favicon-->
+
+    <link rel="icon" href="images/icon.jpg" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!--Navigation-->
+
+    <nav class="nav">
+      <div class="nav-left">
+        <ul>
+          <li style="list-style-type: none">
+            <a href="#about" href="./index.html">About us</a>
+          </li>
+          <li style="list-style-type: none">
+            <a href="#services" href="./index.html">Services</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li style="list-style-type: none">
+            <a href="#contact" href="./index.html">Contact us</a>
+          </li>
+          <li style="list-style-type: none">
+            <a href="#gallery" href="./index.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Placeholder-->
+
+      <div class="hero">
+        <div class="hero-wrapper">
+          <h1>Let's get cooking....</h1>
+          <p>"Good food is the foundation of genuine happiness" -Auguste Escoffier</p>
+          <div class="input">
+            <input placeholder="Search for recipes" />
+          </div>
+          <div class="media">
+          
+            <a href="http://instagram.com" target="_blank">
+            <img src="images/1600429 insta.png" width="30px" />
+            </a>
+            <a href="http://facebook.com" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="http://twitter.com" target="_blank">
+            <img src="images/4672489 tweet.png" width="30px" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Section 2-->
+
+      
+    
+  <section class="page-section" id="about-us">
+      <div class="text-block">
+        <hr class="divider"/>
+        <h2>Our stories</h2>
+        <p>
+          Maybe you’re a novice looking to learn through trial and error, like
+          Julie Powell. Or maybe your loved ones are constantly begging you to
+          make (or share) your latest recipe. Whether you’re a beginner or a
+          bona fide expert, you may have thought about starting to share your
+          culinary exploits and you’ve stumbled into the right place! You may be
+          able to julienne like a champ, but knowing how to wield a knife won’t
+          help you set up your website. For me, the only aim is to integrate
+          food recipes into their existing business marketing.Regardless of your
+          goals, these steps will get your food page up, running, and ready for
+          you to start writing! And that’s why we’re here.
+        </p>
+      </div>
+      
+      
+  </section> 
+    <!--Section 3-->
+
+  <section class="page-section" id="services">
+      
+      <div>
+        
+        <hr class="divider" />
+        <h2>Services</h2>
+        <p>Sign up to cook with us</p>
+      </div> <br></br>
+      <div class="label">
+        <label for="fname">Enter your name</label>
+        <input type="name" id="name" size="18" required />
+
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" size="18" required />
+
+        <label for="phone">Enter your phone number</label>
+        <input
+          type="tel"
+          id="phone"
+          size="18"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+
+        <!-- <button type="button" onclick="alert"> Submit </button> -->
+        <button class="button" onclick='location.href="Submit"'>
+          <!-- <i class="fa fa-twitter"></i>  -->
+          Submit
+      </button>
+      </div>
+  </section>
+
+   <!--Section 4-->
+
+  <section class="page-section" id="contact-us">
+     
+    <div class="container">
+      
+     <hr class="divider"/>
+     <h2>Contact us</h2>
+     <p>1+ (555) 456 7891</p>
+     <a target="_blank" href="smashingdishes.com" style="color: aliceblue;">
+       smashing.dishes@smashingdishes.com</a>
+
+    </div>
+  </section>
+   
+  <!--Gallery-->
+  
+  <section id="gallery">
+      <hr class="divider"/>
+      <h2>Gallery</h2>
+      <p>Our most famous recipes</p>
+      <div class="container-box">
+        <img src="images/breakfast salad.jpeg" alt="Avatar" class="image-box">
+        <div class="overlay">
+          <a class="text" href="images/breakfast salad.jpeg">
+          <marquee direction="down" height="50" 
+          width="200">Breakfast Salad</marquee> 
+        </a>
+        </div>
+      </div>
+    
+    <div class="container-box">
+      <img src="images/asparagus and jammy egg.jpeg" alt="Avatar" class="image-box">
+      <div class="overlay">
+        <a class="text" href="images/asparagus and jammy egg.jpeg">
+          <marquee direction="down" height="50" 
+          width="200">Asparagus with Jammy Egg & Pickle Dressing </marquee>
+        </a>
+      </div>
+    </div>
+    
+      <div class="container-box">
+        <img src="images/squash lentil curry.jpeg" alt="Avatar" class="image-box">
+        <div class="overlay" >
+          <a class="text" href="images/squash lentil curry.jpeg">
+            <marquee direction="down" height="50" 
+            width="200">Squash & Lentil Curry with Thai Gremolata</marquee>
+          </a>
+        </div>
+      </div>
+    
+  </section>
+      </div>
+  </body>
+</html>

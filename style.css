@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  background-color: #222;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(12, 12, 15);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  color: #000000;
+  font-size: 17px;
+}
+.nav a:hover {
+  background: #ddd;
+  color: rgb(0, 0, 0);
+}
+/*Heading*/
+.hero {
+  background-image: url("images/BG4.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-wrapper {
+  width: 100%;
+}
+
+h1 {
+  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+hr {
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.1;
+}
+
+p {
+  color: aliceblue;
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* Nav */
+.nav ul li a {
+  color: aliceblue;
+  font-size: 18px;
+  text-decoration: none;
+}
+.nav-left,
+.nav-right {
+  padding: 0 15px 0 15px;
+}
+
+.nav-right {
+}
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ul {
+  padding-left: 0;
+  display: inline-block;
+}
+input {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px 100px;
+  display: flex;
+  margin: 0 auto;
+  font-style: italic;
+  background-color: hsl(210, 3%, 16%);
+  opacity: 0.5;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+::placeholder {
+  color: whitesmoke;
+  font-display: initial;
+}
+.media {
+}
+@media (min-width: 768px) {
+  .nav ul li a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .nav ul li a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav ul li a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .nav .navbar {
+    flex-direction: column;
+  }
+}
+section {
+  padding: 20rem 0;
+  padding-top: 15rem;
+  padding-right: 10px;
+  padding-bottom: 10rem;
+  padding-left: 10px;
+  margin: auto;
+}
+.text-block {
+  padding: 10px;
+
+  width: 50%;
+  color: aliceblue;
+  margin: 0 auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: aliceblue;
+  text-align: center;
+  font-size: 16px;
+}
+button {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 9px 15px;
+  border: none;
+  margin: 20px;
+}
+
+.container-box .image-box {
+  display: block;
+  margin: 50px;
+  width: 60%;
+  top: 0;
+  left: 30;
+  right: 30;
+  transform: rotateX(365deg);
+  transform-origin: initial;
+  transition-duration: 5s;
+  transform-style: preserve-3d;
+  transform-box: unset;
+  transition-timing-function: inherit;
+}
+.container-box {
+  margin: 0% auto;
+}
+.container-box:hover .overlay {
+  opacity: 0.5;
+}
+.text {
+  color: aliceblue;
+  font-size: 18px;
+
+  bottom: 50%;
+  padding-left: 40%;
+  padding-right: 70%;
+  display: inline-block;
+}
+.overlay {
+  top: 20px;
+  bottom: 10;
+  left: 10%;
+  right: 5%;
+  opacity: 0;
+  background-color: #292927;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
