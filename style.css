@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 .nav a {
-  color: #000000;
+  color: #222020;
   font-size: 17px;
 }
 .nav a:hover {
@@ -47,8 +47,8 @@ ul {
 .hero {
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.4) 100%
     ),
     url(images/bg.jpeg);
 
@@ -129,6 +129,7 @@ input {
   color: whitesmoke;
   font-display: initial;
 }
+
 .container-s2 {
   border: none;
   padding: 50px 50px 50px;
@@ -142,7 +143,7 @@ input {
 }
 .container-image {
   width: 40%;
-  align-self: flex-start;
+  align-self: center;
   margin: 20px 30px 0px 0;
   float: left;
   object-fit: contain;
@@ -163,7 +164,7 @@ input {
 }
 .container-image2 {
   width: 40%;
-  align-self: flex-start;
+  align-self: center;
   margin: 20px 30px 0px 0;
   float: right;
   object-fit: contain;
@@ -210,6 +211,20 @@ button {
 .container-box {
   width: 50%;
   align-items: center;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+@keyframes example {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container-1 {
+  transform: rotate(0deg);
 }
 
 .image-box {
@@ -265,6 +280,18 @@ button {
     font-size: 16px;
   }
 }
+@media (min-width: 992px) {
+  #nav {
+    box-shadow: none;
+    background-color: rgba(0 0 0 / 0%);
+  }
+}
+*,
+* ::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* @media screen and (min-width: 480px) {
   #nav {
     width: 200px;
