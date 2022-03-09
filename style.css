@@ -231,8 +231,6 @@ button {
   display: block;
   width: 100%;
   height: auto;
-  padding-bottom: 20;
-  margin-left: 50%;
 }
 
 .text {
@@ -259,7 +257,6 @@ button {
   height: 100%;
   transition: 0.5s ease;
   opacity: 0.5;
-  margin-left: 50%;
 }
 .container-box:hover .overlay {
   width: 100%;
