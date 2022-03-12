@@ -14,13 +14,13 @@ body {
 }
 .nav-left,
 .nav-right {
-  padding: 0 15px 0 15px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   box-sizing: border-box;
 }
 .nav a {
   color: #222020;
-  font-size: 17px;
+  font-size: 20px;
 }
 .nav a:hover {
   /* background: #ddd; */
@@ -38,7 +38,7 @@ ul {
 }
 .nav ul li a {
   color: aliceblue;
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none;
 }
 
@@ -76,15 +76,16 @@ ul {
   color: rgb(255, 255, 255);
   position: absolute;
   justify-content: space-between;
-  bottom: 50;
-  left: 48%;
+  bottom: 10;
+  left: 45%;
   padding-bottom: 2px;
+  font-size: 25px;
 }
 
 h1 {
   color: aliceblue;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
   text-align: center;
   margin-top: 0 auto;
   text-shadow: 10px 10px 10px rgb(0, 0, 0);
@@ -97,6 +98,14 @@ h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
+h3 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
 hr {
   max-width: 5rem;
   padding: 2px;
@@ -109,6 +118,9 @@ p {
   text-align: center;
   font-size: 18px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  border: 5px solid rgb(7, 7, 7);
+  padding: 50px;
+  margin: 20px;
 }
 
 input {
@@ -132,7 +144,6 @@ input {
 
 .container-s2 {
   border: none;
-  padding: 50px 50px 50px;
   max-width: 650%;
   display: flex;
   background: linear-gradient(
@@ -142,16 +153,26 @@ input {
   );
 }
 .container-image {
-  width: 40%;
+  width: 50%;
   align-self: center;
   margin: 20px 30px 0px 0;
-  float: left;
+  display: inline-block;
   object-fit: contain;
 }
 .s2 {
   display: initial;
 }
+.zoom {
+  padding: 50px;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
 
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
 .container-s3 {
   background-image: url(images/photo-1512386233331-f023884a92e8.jpeg);
   background-color: transparent;
@@ -160,17 +181,31 @@ input {
   border: none;
   padding: 50px 50px 50px;
   max-width: 650%;
-  display: flow-root;
+  display: flex;
 }
 .container-image2 {
-  width: 40%;
+  width: 50%;
   align-self: center;
   margin: 20px 30px 0px 0;
-  float: right;
+  display: inline-block;
   object-fit: contain;
 }
-.s3 {
-  display: initial;
+
+.label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: aliceblue;
+  text-align: center;
+  font-size: 16px;
+  border: 5px solid rgb(7, 7, 7);
+  padding: 50px;
+  margin: 20px;
+}
+button {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 9px 15px;
+  border: none;
+  margin: 20px;
 }
 .container-s4 {
   background-image: url(images/photo-1532153975070-2e9ab71f1b14.jpeg);
@@ -181,9 +216,7 @@ input {
   padding: 50px 50px 50px;
   max-width: 650%;
 }
-.container-image3 {
-  width: 30%;
-}
+
 .s4 {
   background-color: rgb(0, 0, 0);
   opacity: 0.7;
@@ -193,46 +226,42 @@ input {
   padding-bottom: 20px;
   right: 20%;
 }
-
-.label {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: aliceblue;
-  text-align: center;
-  font-size: 16px;
-}
-button {
-  font-size: 14px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding: 9px 15px;
-  border: none;
-  margin: 20px;
-}
-
-.container-box {
-  width: 50%;
-  align-items: center;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
+.page-section {
+  padding: 6rem 0;
 }
 @keyframes example {
   0% {
-    transform: rotateX(0deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
 }
-.container-1 {
+/* .container-1 {
   transform: rotate(0deg);
-}
+} */
 
 .image-box {
-  display: block;
   width: 100%;
   height: auto;
+  display: block;
+  object-fit: contain;
 }
-
+.column {
+  /* width: 35%;
+  padding: 5px; */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 4px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 .text {
   color: aliceblue;
   font-size: 16px;
@@ -246,20 +275,22 @@ button {
   white-space: nowrap;
 }
 .overlay {
-  font-family: Georgia, "Times New Roman", Times, serif;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #2d2f30;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease;
-  opacity: 0.5;
-}
-.container-box:hover .overlay {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
   width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.column:hover .overlay {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -289,7 +320,18 @@ button {
   box-sizing: border-box;
 }
 
-/* @media screen and (min-width: 480px) {
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  position: inherit;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 480px) {
   #nav {
     width: 200px;
     float: left;
@@ -297,4 +339,4 @@ button {
   #hero {
     margin-left: 216px;
   }
-} */
+}
