@@ -162,17 +162,6 @@ input {
 .s2 {
   display: initial;
 }
-.zoom {
-  padding: 40px;
-  transition: transform 0.2s;
-  margin: 0 auto;
-}
-
-.zoom:hover {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-}
 .container-s3 {
   background-image: url(images/photo-1512386233331-f023884a92e8.jpeg);
   background-color: transparent;
@@ -186,12 +175,22 @@ input {
 .container-image2 {
   width: 50%;
   align-self: center;
-  margin: 20px 30px 0px 0;
   display: inline-block;
   object-fit: contain;
 }
 .s3 {
   display: initial;
+}
+.zoom {
+  padding: 40px;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .label {
@@ -199,7 +198,6 @@ input {
   color: rgb(15, 15, 15);
   text-align: center;
   font-size: 16px;
-  padding: 5rem;
   margin: 20px;
 }
 button {
